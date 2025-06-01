@@ -64,9 +64,9 @@ fs.createReadStream(csvFile)
 
 totalLen = songs.length;
 songs.sort((a, b) => {
-    if (a.act !== b.act) return a.act - b.act;
-    if (a.scene !== b.scene) return a.scene - b.scene;
-    return a.pos - b.pos;
+    if (a.act !== b.act) return parseInt(a.act) - parseInt(b.act);
+    if (a.scene !== b.scene) return parseInt(a.scene) - parseInt(b.scene);
+    return parseInt(a.pos) - parseInt(b.pos);
 }).forEach(function(obj) {
     curCt++;
     obj.id = obj.youtube;
