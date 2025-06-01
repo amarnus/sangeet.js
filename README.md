@@ -25,8 +25,8 @@ In the process, I ended up learning a lot about ffmpeg (amazing tool!) and life.
 ![Files](files.png)
 
 ## Features
-1. Idempotent® - Each run will create a separate folder so your songs won't get mixed up.
-2. Intelligence Caching® - Each run will only download unseen Youtube songs.
+1. Immutable® - Each run will create a separate folder so your songs won't get mixed up.
+2. Intelligent Caching® - Each run will only download unseen Youtube songs.
 3. Impress your
 bride/groom/in-laws/cousins/uncles/aunts/grandmas/grandpas/great-great-uncle/cousin-third-removed's-grandparents with
 realtime audio mixtape generation

@@ -62,8 +62,12 @@ fs.createReadStream(csvFile)
 
 
 
-          totalLen = songs.length;
-songs.forEach(function(obj) {
+totalLen = songs.length;
+songs.sort((a, b) => {
+    if (a.act !== b.act) return a.act - b.act;
+    if (a.scene !== b.scene) return a.scene - b.scene;
+    return a.pos - b.pos;
+}).forEach(function(obj) {
     curCt++;
     obj.id = obj.youtube;
     obj.song = parseStr(obj.song);
@@ -88,7 +92,7 @@ songs.forEach(function(obj) {
     if(obj.id == "") {
         return;
     }
-    const ytCmd = 'youtube-dl -f bestaudio[ext=m4a] ' + obj.youtube + ' --output "' + cache + '"';
+    const ytCmd = 'yt-dlp -f bestaudio[ext=m4a] ' + obj.youtube + ' --output "' + cache + '"';
     //console.log(obj.id);
     //console.log(ytCmd);
 
