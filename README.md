@@ -13,7 +13,7 @@ out.
 3. Will download from youtube, extract out the best possible audio quality and will trim, fade in/out, concatenate and
 rename the songs accordingly.
 
-Under the hood it primarily devolves to `youtube-dl` and `ffmpeg` for all the heavy-lifting. `sangeet.js` takes a
+Under the hood it primarily devolves to `yt-dlp` and `ffmpeg` for all the heavy-lifting. `sangeet.js` takes a
 batteries-included, sane-defaults, best quality (ymmv) approach to dealing with the crazy number of codecs that youtube
 runs.
 In the process, I ended up learning a lot about ffmpeg (amazing tool!) and life. Of course, all credit goes to Stackoverflow.
@@ -38,7 +38,7 @@ realtime audio mixtape generation
 
 ## Requirements
 
-1. `youtube-dl` (`brew install youtube-dl`)
+1. `yt-dlp` (`brew install yt-dlp`)
 
 2. `ffmpeg` (`brew install ffmpeg`)
 

@@ -138,7 +138,7 @@ songs.sort((a, b) => {
 
 	}
     else {
-        consle.log("File Failed to Download!");
+        console.log("File Failed to Download!");
     }
 
     //Update old - since it's now been processed
